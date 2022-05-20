@@ -76,12 +76,18 @@ a {
 }
 
 .hero-btn {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-color);
   background-color: var(--accent-color);
   letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
 }
 
 /* -------Benefits------- */
@@ -174,4 +180,40 @@ a {
 
 .current {
   color: var(--accent-color);
+}
+
+/* ------Portfolio------- */
+
+.portfolio-title {
+  display: none;
+}
+
+.portfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.36;
+  color: var(--main-color);
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio-sub-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--main-color);
+  letter-spacing: 0.06em;
+}
+
+.portfilolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--text-color);
 }
