@@ -5,20 +5,35 @@
   --secondary-color: #ffffff;
   --accent-color: #2196f3;
   --text-color: #757575;
+  --secondary-background-color: #f5f4fa;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #212121;
+  color: var(--main-color);
+  background-color: var(--secondary-color);
   letter-spacing: 0.03em;
 }
 
-ul {
+.list {
   list-style: none;
 }
 
-a {
+.link {
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* --------Header --------*/
@@ -28,6 +43,7 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
@@ -88,24 +104,23 @@ a {
 
 .hero-btn:hover,
 .hero-btn:focus {
+  background-color: #188ce8;
 }
 
 /* -------Benefits------- */
-
-.benefits-title {
-  display: none;
-}
 
 .benefits-subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .benefits-text {
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
@@ -115,12 +130,13 @@ a {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 /* -------Team-------- */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-background-color);
 }
 
 .team-item {
@@ -131,17 +147,20 @@ a {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
 .team-text {
   font-size: 16px;
   line-height: 1.18;
+  letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
@@ -162,12 +181,14 @@ a {
 .footer-link {
   font-size: 14px;
   line-height: 17.1;
+  letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
 
 .footer-contact {
   font-size: 14px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -184,17 +205,25 @@ a {
 
 /* ------Portfolio------- */
 
-.portfolio-title {
-  display: none;
-}
-
 .portfolio-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.36;
+  letter-spacing: 0.03em;
   color: var(--main-color);
-  background-color: #f5f4fa;
+  background-color: var(--secondary-background-color);
+  cursor: pointer;
+}
+
+.portfolio-btn-all {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
   cursor: pointer;
 }
 
@@ -215,5 +244,6 @@ a {
 .portfilolio-text {
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
   color: var(--text-color);
 }
